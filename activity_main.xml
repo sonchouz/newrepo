@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="212dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="412dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="324dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/timetext"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="248dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="time"
+        android:singleLine="false"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toEndOf="@+id/timer" />
+
+    <ImageView
+        android:id="@+id/timer"
+        android:layout_width="41dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="248dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_sharp_timer" />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_button_background"
+        android:foregroundTint="#FFFFFF"
+        android:paddingVertical="10dp"
+        android:text="Начать"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timetext"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="414dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="#898989"
+        android:backgroundTint="#898989"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnstart"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <ImageButton
+        android:id="@+id/pausebutton"
+        android:layout_width="59dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/videoView"
+        app:srcCompat="@drawable/component_1" />
+
+    <ImageButton
+        android:id="@+id/exercisebtn"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/vector" />
+
+    <ImageButton
+        android:id="@+id/accountbtn"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/group" />
+
+    <ImageButton
+        android:id="@+id/coachbtn"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/personal_trainer_1" />
+
+    <ImageButton
+        android:id="@+id/statisticsbtn"
+        android:layout_width="54dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/vector_6_" />
+
+    <TextView
+        android:id="@+id/exercisetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="24dp"
+        android:text="Упражнения"
+        android:textColor="#2B91D3"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/statisticstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginBottom="24dp"
+        android:text="Статистика"
+        android:textColor="#898989"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/coachtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginBottom="24dp"
+        android:text="Помощь тренера"
+        android:textColor="#898989"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/accounttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="318dp"
+        android:layout_marginBottom="24dp"
+        android:text="Личный кабинет"
+        android:textColor="#898989"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
